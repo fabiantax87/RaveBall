@@ -1,14 +1,13 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { Bars3Icon, ChatBubbleBottomCenterTextIcon, ChatBubbleLeftRightIcon, Cog6ToothIcon, InboxIcon, PencilIcon, QuestionMarkCircleIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import bannerImg from "./assets/images/raveball-banner.png";
 
 const navigation = [
-  { name: "Pricing", href: "#" },
-  { name: "About us", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Pricing", href: "/" },
+  { name: "About us", href: "/" },
+  { name: "Contact", href: "/" },
 ];
 
 function classNames(...classes) {
@@ -22,7 +21,7 @@ function App() {
         <Popover className="relative bg-white">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="#" className="flex flex-row items-center gap-3 font-bold text-lg">
+              <a href="/" className="flex flex-row items-center gap-3 font-bold text-lg">
                 <img className="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
                 <p className="color-black">Rave Ball</p>
               </a>
@@ -114,13 +113,13 @@ function App() {
                   <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                     <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
                       <a
-                        href="#"
+                        href="/"
                         className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8"
                       >
                         Live demo
                       </a>
                       <a
-                        href="#"
+                        href="/"
                         className="flex items-center justify-center rounded-md border border-transparent bg-indigo-500 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-600 sm:px-8"
                       >
                         See pricing
